@@ -185,10 +185,6 @@ export const Graph = ({ isWidget = false }: GraphProps) => {
     toast("This document is too large to display as a graph. Switching to tree view.");
   }
 
-  if (viewType === "premium" && !isWidget) {
-    if (!isPremium) return <PremiumView />;
-  }
-
   return (
     <>
       <Loading loading={loading} message="Painting graph..." />
