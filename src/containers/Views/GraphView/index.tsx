@@ -15,7 +15,6 @@ import useUser from "src/store/useUser";
 import { NodeData } from "src/types/graph";
 import { CustomEdge } from "./CustomEdge";
 import { ErrorView } from "./ErrorView";
-import { PremiumView } from "./PremiumView";
 
 const Canvas = dynamic(() => import("reaflow").then(r => r.Canvas), {
   ssr: false,
